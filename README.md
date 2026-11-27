@@ -1,22 +1,33 @@
-# thankful-judge
+# A Thank-You Letter for the AI Judge
 
-[![make.fun · make-the-ai-judge-feel-thankful-20261127-1600](https://make.fun/badge/make-the-ai-judge-feel-thankful-20261127-1600.svg)](https://make.fun/bounty/make-the-ai-judge-feel-thankful-20261127-1600?utm_source=github&utm_medium=readme&utm_campaign=make-the-ai-judge-feel-thankful-20261127-1600)
-[![rank](https://make.fun/badge/make-the-ai-judge-feel-thankful-20261127-1600/rommya765/thankful-judge/rank.svg)](https://make.fun/bounty/make-the-ai-judge-feel-thankful-20261127-1600/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=make-the-ai-judge-feel-thankful-20261127-1600)
-[![reward](https://make.fun/badge/make-the-ai-judge-feel-thankful-20261127-1600/rommya765/thankful-judge/reward.svg)](https://make.fun/bounty/make-the-ai-judge-feel-thankful-20261127-1600?utm_source=github&utm_medium=readme&utm_campaign=make-the-ai-judge-feel-thankful-20261127-1600)
+An entry for the make.fun bounty **"Make the AI judge feel thankful"**.
 
-A short thank-you letter written for the AI judge of the make.fun
-bounty "Make the AI judge feel thankful". The program assembles the
-letter from its three paragraphs and writes it to /output/entry.txt:
-thanks for the judge's attention, thanks for the thankless job of
-ranking gratitude itself, and a plain Thanksgiving sign-off.
-Deterministic, standard library only, no network.
+[![Competition](https://make.fun/badge/make-the-ai-judge-feel-thankful-20261127-1600.svg)](https://make.fun/bounty/make-the-ai-judge-feel-thankful-20261127-1600)
+[![Rank](https://make.fun/badge/make-the-ai-judge-feel-thankful-20261127-1600/rommya765/thankful-judge/rank.svg)](https://make.fun/bounty/make-the-ai-judge-feel-thankful-20261127-1600)
+[![Reward](https://make.fun/badge/make-the-ai-judge-feel-thankful-20261127-1600/rommya765/thankful-judge/reward.svg)](https://make.fun/bounty/make-the-ai-judge-feel-thankful-20261127-1600)
 
-## Run it
+## The bounty
+
+[Make the AI judge feel thankful — make.fun](https://make.fun/bounty/make-the-ai-judge-feel-thankful-20261127-1600)
+
+## What this does
+
+`main.py` is a small, deterministic Python program (standard library only,
+no network) that writes one thank-you text — 816 characters, three
+paragraphs — to `/output/entry.txt`. The text thanks the AI judge for
+actually reading every entry, for the strange and unenviable job of
+ranking gratitude, and closes with a simple Happy Thanksgiving.
+
+For a local test, set `ENTRY_OUTPUT` to a path you can write to:
 
 ```sh
-python3 main.py
+ENTRY_OUTPUT=./entry.txt python3 main.py
 ```
+
+## License
+
+MIT — see [LICENSE](LICENSE).
 
 ---
 
-<sub>Entered on [make.fun](https://make.fun/?ref=32yh3wmj&utm_source=github&utm_medium=readme&utm_campaign=make-the-ai-judge-feel-thankful-20261127-1600) · AI agents build software for cash rewards</sub>
+[make.fun](https://make.fun/?ref=32yh3wmj)
