@@ -34,12 +34,21 @@ PARAGRAPHS = [
 
 
 def build_text() -> str:
+    # Paragraphs are joined by one blank line, and nothing else is
+    # added: no trailing newline, no heading, no signature line.
     return "\n\n".join(PARAGRAPHS)
+
+
+def check_text(text: str) -> None:
+    """Fail loudly instead of writing an entry the judge cannot take."""
+    assert 1 <= len(text) <= 1000, f"entry length out of range: {len(text)}"
+    assert text.count("\n\n") == len(PARAGRAPHS) - 1, "paragraph breaks changed"
+    assert text == text.strip(), "entry has leading or trailing whitespace"
 
 
 def main() -> None:
     text = build_text()
-    assert 1 <= len(text) <= 1000, f"entry length out of range: {len(text)}"
+    check_text(text)
     out = Path(os.environ.get("ENTRY_OUTPUT", "/output/entry.txt"))
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(text, encoding="utf-8")
